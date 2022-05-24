@@ -1,7 +1,7 @@
 export type User = {name: string, age: number, occupation: string};
 export type Person = { name: string, age:number, role: string }; 
 
-export const users: User[] = [ //A const users é um array de coisas desconhecidas!
+export const users: User[] = [ 
     {
         name: 'Wilker',
         age: 25,
@@ -14,16 +14,12 @@ export const users: User[] = [ //A const users é um array de coisas desconhecid
     }
 ];
 
-// export function logPerson(user: User) {
-//     console.log(` - ${user.name}, ${user.age}`);
-// }
-
 console.log('Users:');
 users.forEach(logPerson);
 
 
-interface User {
-    neme: string,
+interface User1 {
+    name: string,
     age: number,
     occupation: string
 }
@@ -37,7 +33,7 @@ interface Admin {
 
 
 
-export const persons: User[] | Person[]  = [
+export const persons: Person ()  = [
     {
         name: 'Max Mustermann',
         age: 25,
@@ -60,7 +56,7 @@ export const persons: User[] | Person[]  = [
     }
 ];
 
-export function logPerson(user: name, user: age){
+export function logPerson(user: User) {
     console.log(` - ${user.name}, ${user.age}`);
 }
 
